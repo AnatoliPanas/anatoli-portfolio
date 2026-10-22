@@ -53,47 +53,48 @@ const projects = [
 
         <div class="nav-links">
           <a href="#about" data-i18n="navAbout">Über mich</a>
-<a href="#skills" data-i18n="navSkills">Skills</a>
-<a href="#projects" data-i18n="navProjects">Projekte</a>
-<a href="#experience" data-i18n="navExperience">Erfahrung</a>
+          <a href="#skills" data-i18n="navSkills">Skills</a>
+          <a href="#projects" data-i18n="navProjects">Projekte</a>
+          <a href="#experience" data-i18n="navExperience">Erfahrung</a>
         </div>
 
         <div class="language-switcher" aria-label="Sprache wählen">
-  <button type="button" data-lang="de" class="active">DE</button>
-  <button type="button" data-lang="en">EN</button>
-  <button type="button" data-lang="ru">RU</button>
-</div>
+          <button type="button" data-lang="de" class="active">DE</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="ru">RU</button>
+        </div>
 
-<a class="nav-cta" href="#contact">
-  <span data-i18n="navContact">Kontakt</span> <span>↗</span>
-</a>
+        <a class="nav-cta" href="#contact">
+          <span data-i18n="navContact">KONTAKT</span>
+          <span>↗</span>
+        </a>
       </nav>
     </header>
 
     <main>
       <section class="hero container" id="home">
         <div class="hero-copy">
-          <div class="availability">
+          <div class="availability" data-i18n="status">
             <span class="status-dot"></span>
             Software Developer · Nürnberg, Deutschland
           </div>
 
-          <p class="eyebrow">HALLO, ICH BIN</p>
+          <p class="eyebrow" data-i18n="greeting">HALLO, ICH BIN</p>
           <h1>Anatoli Panas<span class="accent">.</span></h1>
 
-          <h2>
+          <h2 data-i18n="heroTitle">
             Ich entwickle <span class="gradient-text">Software</span>, die
             Probleme löst.
           </h2>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="heroDescription">
             Softwareentwickler mit langjähriger Berufserfahrung. Mein
             Schwerpunkt liegt auf Backend-Entwicklung, C#, Python und
             relationalen Datenbanken.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">
+            <a class="button button-primary" href="#projects" data-i18n="projectsButton">
               Projekte entdecken <span>↘</span>
             </a>
             <a
@@ -108,15 +109,16 @@ const projects = [
               class="button button-secondary"
               href="/Lebenslauf.pdf"
               download="Anatoli-Panas-Lebenslauf.pdf"
+              data-i18n="lebenslaufButton"
             >
               Lebenslauf herunterladen <span>↓</span>
             </a>
           </div>
 
           <div class="hero-meta">
-            <span>Backend Development</span>
-            <span>C# & Python</span>
-            <span>SQL & Datenbanken</span>
+            <span data-i18n="metaBackend">Backend Development</span>
+            <span data-i18n="metaDotnet">C# & Python</span>
+            <span data-i18n="metaSql">SQL & Datenbanken</span>
           </div>
         </div>
 
@@ -131,8 +133,7 @@ const projects = [
               />
             </div>
             <div class="profile-caption">
-              <span class="caption-label">SOFTWARE DEVELOPER</span>
-              <strong>Building useful things.</strong>
+              <strong>SOFTWARE DEVELOPER</strong>
               <span class="caption-location">Nürnberg, Germany</span>
             </div>
           </div>
@@ -162,25 +163,26 @@ const projects = [
 
       <section class="section container" id="about">
         <div class="section-heading">
-          <p class="eyebrow">01 / ÜBER MICH</p>
-          <h2>
+          <p class="eyebrow" data-i18n="aboutEyebrow">ÜBER MICH</p>
+          <h2 data-i18n="aboutTitle">
             Erfahrung trifft auf<br /><span class="muted-heading"
-              >neue Ideen.</span>
+              >neue Ideen.</span
+            >
           </h2>
         </div>
 
         <div class="about-grid">
-          <p class="about-lead">
+          <p class="about-lead" data-i18n="aboutLead">
             Ich verbinde praktische Erfahrung in der Softwareentwicklung mit
             kontinuierlichem Lernen und neuen Technologien.
           </p>
           <div class="about-text">
-            <p>
+            <p data-i18n="aboutDescription">
               Mein beruflicher Hintergrund umfasst die Entwicklung und Betreuung
               von Softwarelösungen, die Arbeit mit Datenbanken und die
               Unterstützung komplexer technischer Prozesse.
             </p>
-            <p>
+            <p data-i18n="aboutDescription2">
               Heute vertiefe ich meine Kenntnisse in modernen Backend-
               Technologien und Python. Ich interessiere mich für durchdachte
               Softwarearchitektur, sauberen Code und Lösungen mit echtem Nutzen.
@@ -192,12 +194,12 @@ const projects = [
       <section class="section section-alt" id="skills">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">02 / TECHNOLOGIEN</p>
-            <h2>
-              Mein technischer <span class="gradient-text"
-                >Werkzeugkasten.</span>
+            <p class="eyebrow" data-i18n="technologiesEyebrow">TECHNOLOGIEN</p>
+            <h2 data-i18n="skillsTitle">
+              Mein technischer <span class="gradient-text">Werkzeugkasten.</span
+              >
             </h2>
-            <p class="section-intro">
+            <p class="section-intro" data-i18n="skillsIntro">
               Technologien, mit denen ich arbeite und meine Kenntnisse
               weiterentwickle.
             </p>
@@ -207,29 +209,29 @@ const projects = [
             <article class="skill-card">
               <span class="skill-number">01</span>
               <div class="skill-symbol">⌘</div>
-              <h3>Backend</h3>
+              <h3 data-i18n="backend">Backend</h3>
               <p>C# · .NET · ASP.NET Core · Python · Django · Java</p>
             </article>
 
             <article class="skill-card">
               <span class="skill-number">02</span>
               <div class="skill-symbol">▤</div>
-              <h3>Datenbanken</h3>
+              <h3 data-i18n="databases">Datenbanken</h3>
               <p>SQL · PostgreSQL · Oracle · MS SQL Server · MongoDB</p>
             </article>
 
             <article class="skill-card">
               <span class="skill-number">03</span>
               <div class="skill-symbol">⌘</div>
-              <h3>Tools & DevOps</h3>
+              <h3 data-i18n="tools">Tools & DevOps</h3>
               <p>Git · Docker · Linux · Jenkins · CI/CD</p>
             </article>
 
             <article class="skill-card">
               <span class="skill-number">04</span>
               <div class="skill-symbol">✳</div>
-              <h3>Web & Testing</h3>
-              <p>HTML · CSS · JavaScript · REST APIs · pytest</p>
+              <h3 data-i18n="webTesting">Web & Testing</h3>
+              <p>HTML · CSS · JavaScript · REST APIs · Pytest</p>
             </article>
           </div>
 
@@ -248,8 +250,8 @@ const projects = [
       <section class="section container" id="projects">
         <div class="section-heading projects-heading">
           <div>
-            <p class="eyebrow">03 / AUSGEWÄHLTE ARBEITEN</p>
-            <h2>Projekte & <span class="muted-heading">Praxis.</span></h2>
+            <p class="eyebrow" data-i18n="projectsEyebrow">PROJEKTE</p>
+            <h2 data-i18n="projectsTitle">Projekte & <span class="muted-heading">Praxis.</span></h2>
           </div>
           <span class="project-count">02 EINBLICKE</span>
         </div>
@@ -280,7 +282,7 @@ const projects = [
           }
         </div>
 
-        <p class="section-note">
+        <p class="section-note" data-i18n="projectNote">
           Weitere Projekte, Quellcode und technische Details werden ergänzt.
         </p>
       </section>
@@ -288,8 +290,10 @@ const projects = [
       <section class="section section-alt" id="experience">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">04 / BERUFLICHER WEG</p>
-            <h2>Erfahrung & <span class="muted-heading">Qualifikation.</span></h2>
+            <p class="eyebrow" data-i18n="experienceEyebrow">BERUFLICHER WEG</p>
+            <h2 data-i18n="experienceTitle">
+              Erfahrung & <span class="muted-heading">Qualifikation.</span>
+            </h2>
           </div>
 
           <div class="timeline">
@@ -299,14 +303,14 @@ const projects = [
                 <p class="timeline-date">MAI 2026 – JULI 2026</p>
                 <h3>Praktikum: AI Developer / Backend Application Developer</h3>
                 <p class="timeline-company">
-                  Zweckverband Naturpark Rheinland (in Kooperation mit TU Berlin)
+                  Zweckverband Naturpark Rheinland (in Kooperation mit TU
+                  Berlin)
                 </p>
                 <p>
                   Integration von Sprachmodellen (LLMs) und Konzeption von
-                  RAG-Architekturen. Entwicklung von APIs, Verbesserung der
-                  User Experience und Optimierung automatisierter
-                  Gesprächsverläufe. Prototyping und Übergabe eines
-                  funktionsfähigen KI-Chatbots.
+                  RAG-Architekturen. Entwicklung von APIs, Verbesserung der User
+                  Experience und Optimierung automatisierter Gesprächsverläufe.
+                  Prototyping und Übergabe eines funktionsfähigen KI-Chatbots.
                 </p>
               </div>
             </article>
@@ -320,11 +324,11 @@ const projects = [
                   Schule für Bildende Kunst und Gestaltung GmbH, Berlin
                 </p>
                 <p>
-                  Entwicklung von Backend-Komponenten, Datenbanken und REST APIs.
-                  Umsetzung neuer Funktionen mit Python, JavaScript und React
-                  sowie Containerisierung mit Docker. Optimierung von
-                  Performance und Softwarearchitektur in Zusammenarbeit
-                  mit dem Frontend-Team.
+                  Entwicklung von Backend-Komponenten, Datenbanken und REST
+                  APIs. Umsetzung neuer Funktionen mit Python, JavaScript und
+                  React sowie Containerisierung mit Docker. Optimierung von
+                  Performance und Softwarearchitektur in Zusammenarbeit mit dem
+                  Frontend-Team.
                 </p>
               </div>
             </article>
@@ -336,18 +340,18 @@ const projects = [
                 <h3>Softwareentwickler</h3>
                 <p class="timeline-company">Surgutneftegas</p>
                 <p>
-                  Entwicklung und Betreuung von Softwarelösungen für über
-                  500 Nutzer. Arbeit an Backend-Systemen, Schnittstellen,
-                  Web- und Desktop-Anwendungen sowie Datenbankdesign und
+                  Entwicklung und Betreuung von Softwarelösungen für über 500
+                  Nutzer. Arbeit an Backend-Systemen, Schnittstellen, Web- und
+                  Desktop-Anwendungen sowie Datenbankdesign und
                   Systemarchitektur. Optimierung bestehender Anwendungen,
-                  Entwicklungsprozesse und CI/CD-Pipelines. Unterstützung
-                  des Teams bei technischen Problemen und Einarbeitung
-                  neuer Mitarbeiter.
+                  Entwicklungsprozesse und CI/CD-Pipelines. Unterstützung des
+                  Teams bei technischen Problemen und Einarbeitung neuer
+                  Mitarbeiter.
                 </p>
                 <p>
-                  <strong>Technologien:</strong> C#, ASP.NET, .NET, .NET Core,
-                  Delphi, JavaScript, SQL, PL/SQL, HTML, CSS, Oracle,
-                  PostgreSQL, MongoDB, SVN, Jenkins, SonarQube.
+                  <strong>Technologien:</strong> C#, ASP.NET, .NET, .NET Core, Delphi,
+                  JavaScript, SQL, PL/SQL, HTML, CSS, Oracle, PostgreSQL, MongoDB,
+                  SVN, Jenkins, SonarQube.
                 </p>
               </div>
             </article>
@@ -359,8 +363,8 @@ const projects = [
                 <h3>Weiterbildung: Python & Künstliche Intelligenz</h3>
                 <p class="timeline-company">IT Career Hub GmbH, Berlin</p>
                 <p>
-                  Weiterbildung in Python, Webentwicklung, APIs, Testing,
-                  Docker und modernen Entwicklungsmethoden.
+                  Weiterbildung in Python, Webentwicklung, APIs, Testing, Docker
+                  und modernen Entwicklungsmethoden.
                 </p>
               </div>
             </article>
@@ -384,8 +388,8 @@ const projects = [
                 </p>
                 <p>
                   Fachrichtung „Automatisierte Datenverarbeitungs- und
-                  Steuerungssysteme“. Die Gleichwertigkeit des Abschlusses
-                  wurde durch eine ZAB-Zeugnisbewertung bestätigt.
+                  Steuerungssysteme“. Die Gleichwertigkeit des Abschlusses wurde
+                  durch eine ZAB-Zeugnisbewertung bestätigt.
                 </p>
               </div>
             </article>
@@ -394,12 +398,13 @@ const projects = [
       </section>
 
       <section class="contact-section container" id="contact">
-        <p class="eyebrow">05 / KONTAKT</p>
-        <h2>
+        <p class="eyebrow" data-i18n="navContact">KONTAKT</p>
+        <h2 data-i18n="contactTitle">
           Lass uns über<br /><span class="gradient-text"
-            >Software sprechen.</span>
+            >Software sprechen.</span
+          >
         </h2>
-        <p>
+        <p data-i18n="contactDescription">
           Du suchst Unterstützung für ein Projekt oder möchtest dich fachlich
           austauschen? Ich freue mich auf deine Nachricht.
         </p>
@@ -408,6 +413,7 @@ const projects = [
           href="https://www.linkedin.com/in/anatoli-panas"
           target="_blank"
           rel="noreferrer"
+          data-i18n="contactButton"
         >
           Kontakt über LinkedIn <span>↗</span>
         </a>
@@ -418,835 +424,58 @@ const projects = [
       <div class="container footer-inner">
         <a class="brand" href="#home">AP<span>.</span></a>
         <p>© {new Date().getFullYear()} Anatoli Panas</p>
-        <a href="#home">Zurück nach oben ↑</a>
+        <a href="#home" data-i18n="backToTop">Zurück nach oben ↑</a>
       </div>
     </footer>
     <script>
-  import { translations } from "../scripts/translations.js";
+      import { translations } from "../scripts/translations.js";
 
-  type Language = "de" | "en" | "ru";
+      type Language = "de" | "en" | "ru";
 
-  function setLanguage(lang: Language) {
-    const dictionary = translations[lang];
+      function setLanguage(lang: Language) {
+        const dictionary = translations[lang];
 
-    document.documentElement.lang = lang;
+        document.documentElement.lang = lang;
 
-    document.querySelectorAll<HTMLElement>("[data-i18n]").forEach((element) => {
-      const key = element.dataset.i18n as keyof typeof dictionary;
-      const value = dictionary[key];
+        document
+          .querySelectorAll<HTMLElement>("[data-i18n]")
+          .forEach((element) => {
+            const key = element.dataset.i18n as keyof typeof dictionary;
+            const value = dictionary[key];
 
-      if (value !== undefined) {
-        element.innerHTML = value;
+            if (value !== undefined) {
+              element.innerHTML = value;
+            }
+          });
+
+        document
+          .querySelectorAll<HTMLButtonElement>("[data-lang]")
+          .forEach((button) => {
+            const active = button.dataset.lang === lang;
+            button.classList.toggle("active", active);
+            button.setAttribute("aria-pressed", String(active));
+          });
+
+        localStorage.setItem("portfolio-language", lang);
       }
-    });
 
-    document.querySelectorAll<HTMLButtonElement>("[data-lang]").forEach((button) => {
-      const active = button.dataset.lang === lang;
-      button.classList.toggle("active", active);
-      button.setAttribute("aria-pressed", String(active));
-    });
+      document
+        .querySelectorAll<HTMLButtonElement>("[data-lang]")
+        .forEach((button) => {
+          button.addEventListener("click", () => {
+            const lang = button.dataset.lang;
 
-    localStorage.setItem("portfolio-language", lang);
-  }
+            if (lang === "de" || lang === "en" || lang === "ru") {
+              setLanguage(lang);
+            }
+          });
+        });
 
-  document.querySelectorAll<HTMLButtonElement>("[data-lang]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const lang = button.dataset.lang;
+      const savedLanguage = localStorage.getItem("portfolio-language");
+      const initialLanguage: Language =
+        savedLanguage === "en" || savedLanguage === "ru" ? savedLanguage : "de";
 
-      if (lang === "de" || lang === "en" || lang === "ru") {
-        setLanguage(lang);
-      }
-    });
-  });
-
-  const savedLanguage = localStorage.getItem("portfolio-language");
-  const initialLanguage: Language =
-    savedLanguage === "en" || savedLanguage === "ru" ? savedLanguage : "de";
-
-  setLanguage(initialLanguage);
-</script>
+      setLanguage(initialLanguage);
+    </script>
   </body>
 </html>
-
-<style>
-  :global(html) {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-  }
-  :global(body) {
-    margin: 0;
-    background: #0b1020;
-    color: #e8edf8;
-    font-family:
-      Inter,
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  :global(*) {
-    box-sizing: border-box;
-  }
-  :global(a) {
-    color: inherit;
-    text-decoration: none;
-  }
-  :global(::selection) {
-    background: #70e1f5;
-    color: #0b1020;
-  }
-  .container {
-    width: min(1120px, calc(100% - 48px));
-    margin-inline: auto;
-  }
-  .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: rgb(11 16 32 / 88%);
-    border-bottom: 1px solid #ffffff0d;
-    backdrop-filter: blur(18px);
-  }
-  .nav {
-    min-height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px;
-  }
-  .brand {
-    font-size: 25px;
-    font-weight: 850;
-    letter-spacing: -2px;
-  }
-  .brand span,
-  .accent {
-    color: #70e1f5;
-  }
-  .nav-links {
-    display: flex;
-    gap: 30px;
-    color: #9aa7bd;
-    font-size: 13px;
-  }
-  .nav-links a,
-  .footer a:last-child {
-    transition: color 0.2s ease;
-  }
-  .nav-links a:hover,
-  .footer a:last-child:hover {
-    color: #70e1f5;
-  }
-  .nav-cta {
-    font-size: 13px;
-    border: 1px solid #ffffff20;
-    padding: 11px 16px;
-    border-radius: 9px;
-  }
-  .nav-cta span {
-    color: #70e1f5;
-    margin-left: 7px;
-  }
-  .hero {
-    min-height: 660px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
-    gap: 48px;
-    padding-top: 80px;
-    padding-bottom: 105px;
-  }
-  .availability {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    color: #b3bfd2;
-    border: 1px solid #ffffff14;
-    background: #ffffff05;
-    border-radius: 99px;
-    padding: 9px 13px;
-    font-size: 11px;
-  }
-  .status-dot,
-  .stack-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #72e4bd;
-    box-shadow: 0 0 12px #72e4bd80;
-  }
-  .eyebrow {
-    color: #70e1f5;
-    font-size: 10px;
-    font-weight: 750;
-    letter-spacing: 2.5px;
-    margin: 0 0 18px;
-  }
-  .hero .eyebrow {
-    margin-top: 35px;
-    margin-bottom: 13px;
-  }
-  h1 {
-    margin: 0;
-    font-size: clamp(48px, 6.5vw, 76px);
-    line-height: 1.03;
-    letter-spacing: -4px;
-    font-weight: 800;
-  }
-  .hero h2 {
-    font-size: clamp(23px, 3vw, 34px);
-    letter-spacing: -1.2px;
-    line-height: 1.3;
-    margin: 22px 0 16px;
-    font-weight: 650;
-  }
-  .gradient-text {
-    color: #70e1f5;
-    background: linear-gradient(100deg, #70e1f5, #a6a3ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .hero-description {
-    color: #9aa7bd;
-    font-size: 15px;
-    line-height: 1.9;
-    max-width: 510px;
-  }
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-  }
-  .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 14px 19px;
-    border-radius: 9px;
-    font-size: 13px;
-    font-weight: 700;
-    transition:
-      transform 0.2s,
-      border-color 0.2s;
-  }
-  .button:hover {
-    transform: translateY(-2px);
-  }
-  .button-primary {
-    background: #70e1f5;
-    color: #08111f;
-  }
-  .button-secondary {
-    border: 1px solid #ffffff20;
-  }
-  .button span {
-    font-size: 16px;
-  }
-  .hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 17px;
-    margin-top: 35px;
-    color: #75839a;
-    font-size: 10px;
-  }
-  .hero-meta span::before {
-    content: "✳";
-    color: #70e1f5;
-    margin-right: 7px;
-  }
-  .hero-visual {
-    min-height: 410px;
-    position: relative;
-    display: grid;
-    place-items: center;
-  }
-  .visual-glow {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: #4969ff25;
-    filter: blur(75px);
-  }
-  .profile-frame {
-    position: relative;
-    width: min(310px, 80%);
-    aspect-ratio: 4 / 5;
-    border: 1px solid #ffffff1c;
-    border-radius: 22px;
-    overflow: hidden;
-    background: linear-gradient(145deg, #1b2942, #101629 70%);
-    box-shadow: 0 30px 100px #0005;
-  }
-  .profile-placeholder {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background: radial-gradient(ellipse at 50% 35%, #70e1f51c, transparent 52%);
-  }
-  .profile-initials {
-    font-size: 96px;
-    font-weight: 800;
-    letter-spacing: -8px;
-    color: #ffffff14;
-  }
-  .profile-hint {
-    font-size: 9px;
-    letter-spacing: 3px;
-    color: #71839d;
-  }
-  .profile-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    background: linear-gradient(transparent, #080d1af2);
-  }
-  .caption-label {
-    color: #70e1f5;
-    font-size: 9px;
-    letter-spacing: 2px;
-  }
-  .profile-caption strong {
-    font-size: 18px;
-  }
-  .caption-location {
-    color: #9aa7bd;
-    font-size: 11px;
-  }
-  .floating-card {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 16px;
-    background: #151e31ed;
-    border: 1px solid #ffffff18;
-    border-radius: 12px;
-    box-shadow: 0 15px 45px #0004;
-  }
-  .floating-card strong,
-  .floating-card small {
-    display: block;
-  }
-  .floating-card strong {
-    font-size: 12px;
-  }
-  .floating-card small {
-    font-size: 10px;
-    color: #8998af;
-    margin-top: 5px;
-  }
-  .code-icon {
-    font-size: 21px;
-    color: #70e1f5;
-  }
-  .floating-code {
-    top: 45px;
-    left: -5px;
-  }
-  .floating-stack {
-    bottom: 55px;
-    right: -5px;
-  }
-  .scroll-cue {
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 9px;
-    color: #77849b;
-    letter-spacing: 2px;
-  }
-  .scroll-line {
-    width: 36px;
-    height: 1px;
-    background: #70e1f5;
-  }
-  .section {
-    padding-top: 105px;
-    padding-bottom: 105px;
-  }
-  .section-heading {
-    margin-bottom: 45px;
-  }
-  .section-heading h2,
-  .contact-section h2 {
-    font-size: clamp(32px, 4vw, 48px);
-    letter-spacing: -2px;
-    line-height: 1.2;
-    margin: 0;
-  }
-  .muted-heading {
-    color: #77859c;
-  }
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
-  .about-lead {
-    margin: 0;
-    font-size: 25px;
-    line-height: 1.6;
-    letter-spacing: -0.7px;
-  }
-  .about-text {
-    color: #98a5bb;
-    line-height: 1.9;
-    font-size: 14px;
-  }
-  .about-text p:first-child {
-    margin-top: 0;
-  }
-  .section-alt {
-    background: #101729;
-    border-block: 1px solid #ffffff08;
-  }
-  .section-intro {
-    color: #8d9bb2;
-    font-size: 14px;
-    margin-top: 16px;
-  }
-  .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-  }
-  .skill-card {
-    position: relative;
-    min-height: 205px;
-    padding: 23px;
-    border: 1px solid #ffffff12;
-    background: #ffffff03;
-    border-radius: 14px;
-    transition:
-      border-color 0.2s,
-      transform 0.2s;
-  }
-  .skill-card:hover,
-  .project-card:hover {
-    border-color: #70e1f555;
-    transform: translateY(-3px);
-  }
-  .skill-number {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    color: #64728a;
-    font-size: 10px;
-  }
-  .skill-symbol {
-    font-size: 27px;
-    color: #70e1f5;
-    margin: 10px 0 23px;
-  }
-  .skill-card h3 {
-    font-size: 16px;
-    margin: 0 0 12px;
-  }
-  .skill-card p {
-    color: #8997ae;
-    font-size: 12px;
-    line-height: 1.8;
-    margin: 0;
-  }
-  .skill-tags,
-  .project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-  }
-  .skill-tags {
-    margin-top: 22px;
-  }
-  .skill-tag,
-  .project-tags span {
-    border: 1px solid #ffffff13;
-    border-radius: 6px;
-    padding: 8px 11px;
-    color: #a9b5c9;
-    font-size: 11px;
-  }
-  .projects-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 20px;
-  }
-  .project-count {
-    color: #78869c;
-    font-size: 10px;
-    letter-spacing: 1.5px;
-  }
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .project-card {
-    overflow: hidden;
-    border: 1px solid #ffffff13;
-    border-radius: 15px;
-    background: #101729;
-    transition:
-      border-color 0.2s,
-      transform 0.2s;
-  }
-  .project-art {
-    min-height: 190px;
-    position: relative;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    background: radial-gradient(
-      ellipse at center,
-      #30436d 0%,
-      #18223a 42%,
-      #11182a 100%
-    );
-  }
-  .project-art::before,
-  .project-art::after {
-    content: "";
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    border: 1px solid #70e1f51a;
-    border-radius: 50%;
-  }
-  .project-art::after {
-    width: 190px;
-    height: 190px;
-  }
-  .project-index,
-  .project-art-label {
-    position: absolute;
-    color: #8c9ab2;
-    font-size: 10px;
-    letter-spacing: 1px;
-  }
-  .project-index {
-    top: 20px;
-    left: 20px;
-  }
-  .project-art-label {
-    bottom: 20px;
-    right: 20px;
-  }
-  .project-art-symbol {
-    z-index: 1;
-    font-size: 57px;
-    color: #70e1f5;
-    text-shadow: 0 0 40px #70e1f566;
-  }
-  .project-content {
-    padding: 25px;
-  }
-  .project-type {
-    font-size: 10px;
-    letter-spacing: 1px;
-    color: #70e1f5;
-    text-transform: uppercase;
-  }
-  .project-content h3 {
-    font-size: 21px;
-    margin: 10px 0;
-  }
-  .project-description {
-    min-height: 50px;
-    font-size: 13px;
-    line-height: 1.8;
-    color: #96a4ba;
-  }
-  .project-tags {
-    margin-top: 20px;
-  }
-  .project-tags span {
-    font-size: 10px;
-    padding: 6px 9px;
-  }
-  .section-note {
-    margin-top: 25px;
-    color: #78869c;
-    font-size: 12px;
-  }
-  .timeline {
-    max-width: 760px;
-    margin-left: 8px;
-    border-left: 1px solid #ffffff19;
-  }
-  .timeline-item {
-    position: relative;
-    padding: 0 0 38px 32px;
-  }
-  .timeline-item:last-child {
-    padding-bottom: 0;
-  }
-  .timeline-marker {
-    position: absolute;
-    left: -5px;
-    top: 3px;
-    width: 9px;
-    height: 9px;
-    background: #70e1f5;
-    border-radius: 50%;
-    box-shadow: 0 0 15px #70e1f555;
-  }
-  .timeline-date {
-    margin: 0 0 10px;
-    font-size: 9px;
-    letter-spacing: 2px;
-    color: #70e1f5;
-  }
-  .timeline-item h3 {
-    margin: 0 0 7px;
-    font-size: 20px;
-  }
-  .timeline-company {
-    color: #d4deed;
-    font-size: 12px;
-    margin: 0 0 12px;
-  }
-  .timeline-item div > p:last-child {
-    max-width: 600px;
-    margin: 0;
-    color: #8e9cb2;
-    font-size: 13px;
-    line-height: 1.8;
-  }
-  .certification-note {
-    display: flex;
-    align-items: start;
-    gap: 18px;
-    max-width: 760px;
-    margin-top: 48px;
-    padding: 25px;
-    border: 1px solid #ffffff12;
-    border-radius: 12px;
-  }
-  .cert-icon {
-    color: #70e1f5;
-    font-size: 25px;
-  }
-  .certification-note h3 {
-    margin: 0 0 8px;
-    font-size: 15px;
-  }
-  .certification-note p {
-    margin: 0;
-    color: #8e9cb2;
-    font-size: 12px;
-    line-height: 1.8;
-  }
-  .contact-section {
-    padding-top: 110px;
-    padding-bottom: 115px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contact-section h2 {
-    font-size: clamp(36px, 5vw, 56px);
-  }
-  .contact-section > p:not(.eyebrow) {
-    max-width: 510px;
-    color: #97a5ba;
-    font-size: 14px;
-    line-height: 1.9;
-    margin: 20px 0 27px;
-  }
-  .footer {
-    border-top: 1px solid #ffffff12;
-  }
-  .footer-inner {
-    min-height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .footer p,
-  .footer a:last-child {
-    color: #8390a6;
-    font-size: 11px;
-  }
-  @media (max-width: 850px) {
-    .hero {
-      grid-template-columns: 1fr 0.8fr;
-      gap: 20px;
-    }
-    .nav-links {
-      gap: 16px;
-    }
-    .skill-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .floating-code {
-      left: -12px;
-    }
-    .floating-stack {
-      right: -12px;
-    }
-  }
-  @media (max-width: 650px) {
-    .container {
-      width: min(100% - 36px, 520px);
-    }
-    .nav {
-      min-height: 66px;
-    }
-    .nav-links {
-      display: none;
-    }
-    .nav-cta {
-      padding: 9px 12px;
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 12px;
-      padding-top: 65px;
-      padding-bottom: 90px;
-    }
-    h1 {
-      font-size: clamp(48px, 13vw, 68px);
-      letter-spacing: -3px;
-    }
-    .hero h2 {
-      font-size: 27px;
-    }
-    .hero-visual {
-      min-height: 390px;
-      margin-top: 25px;
-    }
-    .profile-frame {
-      width: 270px;
-    }
-    .floating-code {
-      left: 0;
-      top: 40px;
-    }
-    .floating-stack {
-      right: 0;
-      bottom: 40px;
-    }
-    .scroll-cue {
-      bottom: 25px;
-    }
-    .section {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-    .about-grid,
-    .project-grid {
-      grid-template-columns: 1fr;
-      gap: 25px;
-    }
-    .about-lead {
-      font-size: 22px;
-    }
-    .skill-grid {
-      gap: 10px;
-    }
-    .skill-card {
-      padding: 18px;
-      min-height: 190px;
-    }
-    .skill-number {
-      top: 16px;
-      right: 16px;
-    }
-    .skill-card h3 {
-      font-size: 14px;
-    }
-    .skill-card p {
-      font-size: 11px;
-    }
-    .projects-heading {
-      align-items: start;
-    }
-    .project-count {
-      padding-top: 7px;
-    }
-    .project-art {
-      min-height: 165px;
-    }
-    .contact-section {
-      padding-top: 80px;
-      padding-bottom: 85px;
-    }
-    .footer-inner {
-      flex-wrap: wrap;
-      padding-block: 22px;
-    }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    :global(html) {
-      scroll-behavior: auto;
-    }
-    *,
-    *::before,
-    *::after {
-      transition-duration: 0.01ms !important;
-    }
-  }
-  .profile-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 35%;
-    display: block;
-  }
-  .language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid #ffffff20;
-  border-radius: 9px;
-}
-
-.language-switcher button {
-  padding: 7px 9px;
-  border: 0;
-  border-radius: 6px;
-  background: transparent;
-  color: #9aa7bd;
-  font-size: 11px;
-  cursor: pointer;
-}
-
-.language-switcher button.active {
-  background: #70e1f5;
-  color: #08111f;
-}
-
-.language-switcher button:hover {
-  color: #70e1f5;
-}
-
-.language-switcher button.active:hover {
-  color: #08111f;
-}
-</style>
