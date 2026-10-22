@@ -17,6 +17,7 @@ export const translations = {
     metaBackend: "Backend Development",
     metaDotnet: "C# & Python",
     metaSql: "SQL & Datenbanken",
+    metaCity: "Nürnberg, Deutschland",
 
     aboutEyebrow: "ÜBER MICH",
     aboutTitle: 'Erfahrung trifft auf<br /><span class="muted-heading">neue Ideen.</span>',
@@ -61,6 +62,7 @@ export const translations = {
     metaBackend: "Backend Development",
     metaDotnet: "C# & Python",
     metaSql: "SQL & Databases",
+    metaCity: "Nuremberg, Germany",
 
     aboutEyebrow: "ABOUT ME",
     aboutTitle: 'Experience meets<br /><span class="muted-heading">new ideas.</span>',
@@ -105,6 +107,7 @@ export const translations = {
     metaBackend: "Backend-разработка",
     metaDotnet: "C# и Python",
     metaSql: "SQL и базы данных",
+    metaCity: "Нюрнберг, Германия",
 
     aboutEyebrow: "ОБО МНЕ",
     aboutTitle: 'Опыт встречается<br /><span class="muted-heading">с новыми идеями.</span>',
